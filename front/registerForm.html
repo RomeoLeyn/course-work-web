@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Стилі -->
+  <link rel="stylesheet" href="css/registerForm.css">
+
+  <!-- FavIcon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="manifest" href="favicons/site.webmanifest">
+  <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="theme-color" content="#ffffff">
+  <title>Реєстрація</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-6 col-md-4">
+        <div class="card">
+          <div class="card-header bg-dark text-white text-center">
+            <h4>Register</h4>
+          </div>
+          <div class="card-body">
+            <form method="post" id="userForm">
+              <div class="form-group">
+                <label for="firstName">login:</label>
+                <input type="text" class="form-control" id="login" placeholder="Введіть ім'я">
+              </div>
+              <!-- <div class="form-group">
+                    <label for="lastName">Last name:</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Enter last name">
+                  </div> -->
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Введіть email">
+              </div>
+              <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" placeholder="Введіть пароль">
+              </div>
+              <!-- <div class="form-group">
+                <label for="confirmPassword">Confirm password:</label>
+                <input type="password" class="form-control" id="confirmPassword" placeholder="Введіть пароль ще раз">
+              </div> -->
+              <button type="submit" class="btn btn-dark btn-block mt-3">Готово</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <script src="js/User.js"></script> -->
+  <script src="js/register.js"></script>
+  <script src="js/server.js"></script>
+</body>
+
+</html>

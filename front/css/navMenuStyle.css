@@ -1,0 +1,43 @@
+body {
+  font-family: Montserrat;
+  font-size: 16px;
+}
+
+.modal .modal-footer {
+  background-color: black;
+}
+
+.modal .modal-header {
+  background-color: black;
+}
+
+.modal .modal-title {
+  color: white;
+}
+
+.navbar-nav .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+#add-button {
+  display: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: black;
+}
+
+.add-button:hover {
+  color: whitesmoke;
+}
+
+/* Стилі для випадаючого списку кнопки Входу/Реєстрації/В */
+
+.exit-button {
+  display: none;
+}
+
+/* Стилі для модального вікна додавання карточки товару */
+.modal-body input {
+  margin: 10px;
+}
