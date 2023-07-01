@@ -1,6 +1,6 @@
 async function removeProduct(a) {
     console.log(a);
-    await fetch(`http://localhost:3000/js/deleteProduct/${a}`, {
+    await fetch(`https://connectworld-y3h1.onrender.com/js/deleteProduct/${a}`, {
         method: "DELETE",
         headers: {
             'Content-Type': 'application/json'

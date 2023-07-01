@@ -10,7 +10,7 @@ document.querySelector('#modal-body-info').addEventListener('submit', function (
   const productSize = document.getElementById('product-size').value;
   const productPrice = document.getElementById('product-price').value;
 
-  fetch('http://localhost:3000/js/product', {
+  fetch('https://connectworld-y3h1.onrender.com/js/product', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -165,7 +165,7 @@ document.querySelector('#modal-body-info').addEventListener('submit', function (
 
 async function getCard(page = 1, limit = 6, searchQuery = '') {
   try {
-    let url = `http://localhost:3000/js/product?page=${page}&limit=${limit}`;
+    let url = `https://connectworld-y3h1.onrender.com/js/product?page=${page}&limit=${limit}`;
     if (searchQuery) {
       url += `&query=${searchQuery}`;
     }

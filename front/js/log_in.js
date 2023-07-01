@@ -7,7 +7,7 @@ document.getElementById('log-in-form').addEventListener('submit', function (even
     const errorP = document.getElementById("error-password");
 
 
-    fetch('http://localhost:3000/js/log_in', {
+    fetch('https://connectworld-y3h1.onrender.com/js/log_in', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

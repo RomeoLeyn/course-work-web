@@ -8,7 +8,7 @@ document.getElementById('userForm').addEventListener('submit', function (event) 
     console.log(emailInput);
     console.log(passwordInput);
 
-    fetch('http://localhost:3000/js/register', {
+    fetch('https://connectworld-y3h1.onrender.com/js/register', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
