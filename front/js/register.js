@@ -1,4 +1,4 @@
-document.getElementById('userForm').addEventListener('submit', function (event) {
+document.getElementById('userForm').addEventListener('submit', async function (event) {
     event.preventDefault(); // Зупиняємо стандартну поведінку форми
     const loginInput = document.querySelector('#login').value;
     const emailInput = document.querySelector('#email').value;
@@ -8,7 +8,7 @@ document.getElementById('userForm').addEventListener('submit', function (event) 
     console.log(emailInput);
     console.log(passwordInput);
 
-    fetch('https://connectworld-y3h1.onrender.com/js/register', {
+    await fetch('https://connectworld-y3h1.onrender.com/js/register', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

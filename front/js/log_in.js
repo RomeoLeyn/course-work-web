@@ -1,4 +1,4 @@
-document.getElementById('log-in-form').addEventListener('submit', function (event) {
+document.getElementById('log-in-form').addEventListener('submit', async function (event) {
     event.preventDefault(); // Зупиняємо стандартну поведінку форми
 
     const loginInput = document.querySelector('#username').value;
@@ -7,7 +7,7 @@ document.getElementById('log-in-form').addEventListener('submit', function (even
     const errorP = document.getElementById("error-password");
 
 
-    fetch('https://connectworld-y3h1.onrender.com/js/log_in', {
+   await fetch('https://connectworld-y3h1.onrender.com/js/log_in', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

@@ -45,7 +45,7 @@ const User = mongoose.model('User', userSchema);
 
 
 // Додавання юзера в базу даних
-app.post('/js/register', (req, res) => {
+app.post('/front/js/register', (req, res) => {
 
     const { login, email, password } = req.body;
 
@@ -62,7 +62,7 @@ app.post('/js/register', (req, res) => {
 
 
 // запити на пошук юзерsв базі даних
-app.post('/js/log_in', (req, res) => {
+app.post('/front/js/log_in', (req, res) => {
     const { login, password } = req.body;
 
     User.findOne({ login, password })
@@ -120,7 +120,7 @@ const prodcutSchema = new mongoose.Schema(
 const Product = mongoose.model('Product', prodcutSchema);
 
 // додавання карточки товару в базу даних
-app.post('/js/product', (req, res) => {
+app.post('/front/js/product', (req, res) => {
     // console.log("Початок занесення даних");
     const { name, model, typeConnect, interface, maxSpeed, productSize, productPrice } = req.body;
     Product.create({
@@ -178,7 +178,7 @@ app.post('/js/product', (req, res) => {
 // РОБОЧИЙ КОД
 
 // ТИМАЧАСОВИЙ КОД
-app.get('/js/product', async (req, res) => {
+app.get('/front/js/product', async (req, res) => {
     const page = parseInt(req.query.page) || 1;
     const limit = parseInt(req.query.limit) || 6;
     const searchQuery = req.query.query;
@@ -207,7 +207,7 @@ app.get('/js/product', async (req, res) => {
   });
   
   // Функція пошуку товарів
-  app.get('/js/product', async (req, res) => {
+  app.get('/front/js/product', async (req, res) => {
     const searchQuery = req.query.query;
   
     try {
@@ -221,7 +221,7 @@ app.get('/js/product', async (req, res) => {
 
 
 // Видалення
-app.delete('/js/deleteProduct/:id', (req, res) => {
+app.delete('/front/js/deleteProduct/:id', (req, res) => {
     const id = req.params.id;
 
     Product.findByIdAndDelete(id)
